@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.0 on darwin)" generated="20231025 14:45:19.272" rpa="false" schemaversion="4">
+<suite id="s1" name="TestSuite" source="/Users/ganesh/Desktop/Python_libraries/Simple_library/TestSuite.robot">
+<test id="s1-t1" name="Perform Calculations" line="5">
+<kw name="Calculate" library="calculate">
+<var>${result}</var>
+<arg>1 + 2</arg>
+<msg timestamp="20231025 14:45:19.311" level="INFO">${result} = 3</msg>
+<status status="PASS" starttime="20231025 14:45:19.311" endtime="20231025 14:45:19.311"/>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<arg>${result}</arg>
+<arg>3</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<msg timestamp="20231025 14:45:19.312" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<status status="PASS" starttime="20231025 14:45:19.311" endtime="20231025 14:45:19.312"/>
+</kw>
+<kw name="Calculate" library="calculate">
+<var>${result}</var>
+<arg>10 * 5</arg>
+<msg timestamp="20231025 14:45:19.312" level="INFO">${result} = 50</msg>
+<status status="PASS" starttime="20231025 14:45:19.312" endtime="20231025 14:45:19.312"/>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<arg>${result}</arg>
+<arg>50</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<msg timestamp="20231025 14:45:19.313" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<status status="PASS" starttime="20231025 14:45:19.313" endtime="20231025 14:45:19.313"/>
+</kw>
+<kw name="Calculate" library="calculate">
+<var>${result}</var>
+<arg>8 / 4</arg>
+<msg timestamp="20231025 14:45:19.313" level="INFO">${result} = 2.0</msg>
+<status status="PASS" starttime="20231025 14:45:19.313" endtime="20231025 14:45:19.313"/>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<arg>${result}</arg>
+<arg>2</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<msg timestamp="20231025 14:45:19.314" level="INFO">Argument types are:
+&lt;class 'float'&gt;
+&lt;class 'str'&gt;</msg>
+<status status="PASS" starttime="20231025 14:45:19.314" endtime="20231025 14:45:19.314"/>
+</kw>
+<kw name="Calculate" library="calculate">
+<var>${result}</var>
+<arg>2 - 1</arg>
+<msg timestamp="20231025 14:45:19.314" level="INFO">${result} = 1</msg>
+<status status="PASS" starttime="20231025 14:45:19.314" endtime="20231025 14:45:19.314"/>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<arg>${result}</arg>
+<arg>1</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<msg timestamp="20231025 14:45:19.314" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<status status="PASS" starttime="20231025 14:45:19.314" endtime="20231025 14:45:19.315"/>
+</kw>
+<status status="PASS" starttime="20231025 14:45:19.310" endtime="20231025 14:45:19.315"/>
+</test>
+<status status="PASS" starttime="20231025 14:45:19.274" endtime="20231025 14:45:19.315"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestSuite">TestSuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

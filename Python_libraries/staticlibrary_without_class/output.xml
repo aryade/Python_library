@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.0 on darwin)" generated="20231025 14:37:37.221" rpa="false" schemaversion="4">
+<suite id="s1" name="TestSuite" source="/Users/ganesh/Desktop/Python_libraries/staticlibrary_without_class/TestSuite.robot">
+<test id="s1-t1" name="Use Custom Keywords" line="5">
+<kw name="Encode As Base64" library="LibraryWithoutClass">
+<var>${base64}</var>
+<arg>This is a Test String</arg>
+<doc>Encode string as base64.</doc>
+<msg timestamp="20231025 14:37:37.276" level="INFO">${base64} = VGhpcyBpcyBhIFRlc3QgU3RyaW5n</msg>
+<status status="PASS" starttime="20231025 14:37:37.275" endtime="20231025 14:37:37.276"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${base64}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231025 14:37:37.276" level="INFO">VGhpcyBpcyBhIFRlc3QgU3RyaW5n</msg>
+<status status="PASS" starttime="20231025 14:37:37.276" endtime="20231025 14:37:37.276"/>
+</kw>
+<kw name="Decode From Base64" library="LibraryWithoutClass">
+<var>${decoded}</var>
+<arg>${base64}</arg>
+<doc>Decode string from base64.</doc>
+<msg timestamp="20231025 14:37:37.277" level="INFO">${decoded} = This is a Test String</msg>
+<status status="PASS" starttime="20231025 14:37:37.277" endtime="20231025 14:37:37.277"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>${decoded}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20231025 14:37:37.277" level="INFO">This is a Test String</msg>
+<status status="PASS" starttime="20231025 14:37:37.277" endtime="20231025 14:37:37.277"/>
+</kw>
+<status status="PASS" starttime="20231025 14:37:37.275" endtime="20231025 14:37:37.277"/>
+</test>
+<status status="PASS" starttime="20231025 14:37:37.236" endtime="20231025 14:37:37.278"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestSuite">TestSuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

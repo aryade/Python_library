@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.0 on darwin)" generated="20231025 15:27:42.155" rpa="false" schemaversion="4">
+<suite id="s1" name="TestSuite" source="/Users/ganesh/Desktop/Python_libraries/practice_pythonlibrary/TestSuite.robot">
+<test id="s1-t1" name="Use Custom Keywords" line="5">
+<kw name="No Arguments" library="PythonKeywords">
+<msg timestamp="20231025 15:27:42.200" level="INFO">Keyword got no arguments.</msg>
+<status status="PASS" starttime="20231025 15:27:42.200" endtime="20231025 15:27:42.200"/>
+</kw>
+<kw name="One Argument" library="PythonKeywords">
+<arg>Test Argument</arg>
+<msg timestamp="20231025 15:27:42.201" level="INFO">Keyword got one argument 'Test Argument'.</msg>
+<status status="PASS" starttime="20231025 15:27:42.200" endtime="20231025 15:27:42.201"/>
+</kw>
+<kw name="Three Arguments" library="PythonKeywords">
+<arg>One</arg>
+<arg>Two</arg>
+<arg>Three</arg>
+<msg timestamp="20231025 15:27:42.201" level="INFO">Keyword got three arguments 'One', 'Two' and 'Three'.</msg>
+<status status="PASS" starttime="20231025 15:27:42.201" endtime="20231025 15:27:42.201"/>
+</kw>
+<kw name="One Default" library="PythonKeywords">
+<msg timestamp="20231025 15:27:42.201" level="INFO">Argument has value default</msg>
+<status status="PASS" starttime="20231025 15:27:42.201" endtime="20231025 15:27:42.202"/>
+</kw>
+<kw name="Multiple Defaults" library="PythonKeywords">
+<arg>Argument 1</arg>
+<arg>arg3=Argument 3</arg>
+<msg timestamp="20231025 15:27:42.202" level="INFO">Got arguments Argument 1, default 1 and Argument 3</msg>
+<status status="PASS" starttime="20231025 15:27:42.202" endtime="20231025 15:27:42.202"/>
+</kw>
+<kw name="My Keyword" library="PythonKeywords">
+<arg>Argument 1</arg>
+<arg>Argument 2</arg>
+<arg>Named Argument=One Value</arg>
+<msg timestamp="20231025 15:27:42.202" level="INFO">Keyword got args: ('Argument 1', 'Argument 2') and kwargs: {'Named Argument': 'One Value'}</msg>
+<status status="PASS" starttime="20231025 15:27:42.202" endtime="20231025 15:27:42.202"/>
+</kw>
+<status status="PASS" starttime="20231025 15:27:42.199" endtime="20231025 15:27:42.202"/>
+</test>
+<status status="PASS" starttime="20231025 15:27:42.164" endtime="20231025 15:27:42.203"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestSuite">TestSuite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
